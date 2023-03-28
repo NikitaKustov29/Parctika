@@ -1,0 +1,22 @@
+create database  practica;
+
+create table zizka(
+	id int not null identity(1,1) primary key,
+	nameZizka varchar(60),
+	mg int
+);
+
+create table brand (
+	id int not null identity(1,1),
+	nameBrand varchar(30),
+	nameZizka int,
+	foreign key (nameZizka) references zizka (id)
+);
+
+
+insert into zizka (nameZizka, mg) values ('drsnya', 1000)
+insert into zizka (nameZizka, mg) values ('caban', 500)
+insert into zizka (nameZizka, mg) values ('normas', 25)
+
+insert into brand (nameBrand, nameZizka) values ('bloodMes', 1);
+insert into brand (nameBrand, nameZizka) values ('Mesivo', 3);
