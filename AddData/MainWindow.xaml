@@ -1,0 +1,19 @@
+﻿<Window x:Class="AddData.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddData"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Pag1" Width="50" HorizontalAlignment="Left" Content="p1" Click="Pag1_Click"/>
+        <Button x:Name="Pag2" Width="50" HorizontalAlignment="Left" Grid.Row="1" Content="p2" Click="Pag2_Click"/>
+
+        <Frame x:Name="AllFrame" Width="730" Grid.RowSpan="2" HorizontalAlignment="Right"/>
+    </Grid>
+</Window>
